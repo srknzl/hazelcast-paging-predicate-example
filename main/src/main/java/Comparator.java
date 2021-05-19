@@ -20,6 +20,7 @@ public class Comparator implements java.util.Comparator<Map.Entry<String, Double
     }
 
 
+    // used Double since default number type is double in Node.js client. You can also change that with defaultNumberType option
     @Override
     public int compare(Map.Entry<String, Double> e1, Map.Entry<String, Double> e2) {
         Double firstValue = e1.getValue();
