@@ -47,10 +47,7 @@ class Comparator {
         ['seven', 7]
     ].sort(() => 0.5 - Math.random())); // shuffle entries
     /**
-     * ACTUAL (sorted ascending by key):
-     * [ [ 'five', 5 ], [ 'four', 4 ], [ 'one', 1 ] ]
-     *
-     * EXPECTED (sorted descending by value):
+     * Output:
      * [ [ 'seven', 7 ], [ 'six', 6 ], [ 'five', 5 ] ]
      */
     console.log(await getTop3(map));
